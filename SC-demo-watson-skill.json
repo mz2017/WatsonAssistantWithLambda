@@ -356,6 +356,17 @@
     },
     {
       "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1632761388980",
+      "context": {
+        "location": "@location"
+      },
+      "conditions": "@location",
+      "event_name": "input",
+      "dialog_node": "handler_4_1632761388996"
+    },
+    {
+      "type": "event_handler",
       "parent": "slot_9_1632747422556",
       "event_name": "input",
       "dialog_node": "handler_8_1632747422574"
@@ -370,6 +381,14 @@
       "conditions": "@location",
       "event_name": "input",
       "dialog_node": "handler_8_1632749703604"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1632761388980",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1632761388996",
+      "previous_sibling": "handler_4_1632761388996"
     },
     {
       "type": "standard",
@@ -424,7 +443,7 @@
       "next_step": {
         "behavior": "jump_to",
         "selector": "condition",
-        "dialog_node": "node_8_1632403227824"
+        "dialog_node": "node_7_1632761298149"
       },
       "conditions": "!@product",
       "dialog_node": "node_2_1632749669165"
@@ -455,6 +474,19 @@
       "previous_sibling": "Welcome"
     },
     {
+      "type": "frame",
+      "title": "Check location",
+      "parent": "node_8_1632747600503",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_8_1632403227824"
+      },
+      "conditions": "@location",
+      "dialog_node": "node_7_1632761298149",
+      "previous_sibling": "node_2_1632749669165"
+    },
+    {
       "type": "standard",
       "title": "Get Inventory",
       "parent": "node_8_1632747600503",
@@ -477,7 +509,7 @@
       },
       "conditions": "true",
       "dialog_node": "node_8_1632403227824",
-      "previous_sibling": "node_2_1632749669165"
+      "previous_sibling": "node_7_1632761298149"
     },
     {
       "type": "standard",
@@ -567,6 +599,12 @@
       "variable": "$location",
       "dialog_node": "slot_8_1632747693738",
       "previous_sibling": "node_8_1632403227824"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1632761298149",
+      "variable": "$location",
+      "dialog_node": "slot_8_1632761388980"
     },
     {
       "type": "slot",
