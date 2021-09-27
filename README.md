@@ -19,5 +19,5 @@
 - Show me sales orders for IBM
 - What inventory do we have
 - Where do we have iPhone
-- SHow me inventory at store
-
+- Show me inventory at store
+- How many ipad do we have at DC001
